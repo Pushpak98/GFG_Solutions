@@ -1,0 +1,27 @@
+for _ in range(int(input())):
+    m=str(input())
+    b=sorted([char for char in m])
+    all_freq={}
+    flag=0
+    p=[]
+    count=0
+    for i in b:
+        if i in all_freq:
+            all_freq[i]+=1
+        else:
+            all_freq[i]=1
+            
+    for i in all_freq:
+        if all_freq[i]%2==1:
+            p.append(all_freq[i])
+        
+    for i in all_freq:
+        if all_freq[i]%2==0 and len(p)<2:
+            flag=1
+        else:
+            flag=0
+            
+    if flag==1:
+        print('Yes')
+    else:
+        print('No')
