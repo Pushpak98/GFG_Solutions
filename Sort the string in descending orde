@@ -1,0 +1,6 @@
+
+for _ in range(int(input())):
+    a=sorted(str(input()))
+    b=''.join(reversed(a))
+    print(b)
+    
