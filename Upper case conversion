@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jun 20 02:44:52 2020
+
+@author: pus
+"""
+
+for _ in range(int(input())):
+    a=input()
+    print(a.title())
+           
+          
+# i love pushpak           
