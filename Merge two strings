@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    s=list(map(str,input().split()))
+    a=[char for char in s[0]]
+    b=[char for char in s[1]]
+    string=""
+    
+    for i in range(max(len(b),len(a))):
+        if i<len(a):
+            string+=a[i]
+        if i<len(b):
+            string+=b[i]
+    print(string)
