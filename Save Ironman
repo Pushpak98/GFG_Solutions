@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    s=input()
+    d="".join( i for i in s if i.isalnum())
+    q=d.lower()
+    g=q[::-1]
+    if(q[0:len(q)//2]==g[0:len(q)//2]):
+        print("YES")
+    else:
+        print("NO")
