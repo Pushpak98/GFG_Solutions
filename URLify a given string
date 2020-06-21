@@ -1,0 +1,8 @@
+
+for _ in range(int(input())):
+    a=str(input())
+    b=int(input())
+    c=['%20' if x==' ' else x for x in a]
+    print("".join(c))
+    
+    
