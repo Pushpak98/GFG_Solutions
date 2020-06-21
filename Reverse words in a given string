@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun 22 02:02:49 2020
+
+@author: pussy
+"""
+
+for _ in range(int(input())):
+    a=str(input())
+    a=list(a.split("."))
+    a.reverse()
+    b=".".join(a)
+    print(b)
+    
