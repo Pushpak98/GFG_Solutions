@@ -1,0 +1,19 @@
+
+for _ in range(int(input())):
+    n,m=str(input()).split()
+    i=0
+    j=0
+    a=len(n)
+    b=len(m)
+    while i<a and j<b:   
+        if n[i] == m[j]:
+            i+=1
+            j+=1            
+        else:
+            j+=1
+           
+    if i==a:
+        print('1')
+    else:
+        print('0')
+    
