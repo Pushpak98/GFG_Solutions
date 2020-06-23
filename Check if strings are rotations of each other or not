@@ -1,0 +1,13 @@
+for _ in range(int(input())):
+    n=str(input())
+    m=str(input())
+    l=n+n
+    
+    if len(m)==len(n):
+        if m in l:
+            print(1)
+        else:
+            print(0)
+    else:
+        print(0)
+    
