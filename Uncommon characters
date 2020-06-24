@@ -1,0 +1,13 @@
+
+for _ in range(int(input())):
+    n=str(input())
+    m=str(input())
+    y=sorted(set(n))
+    z=sorted(set(m))
+    p=sorted(set(n+m))
+    for i in y:
+        for j in z:
+            if i==j:
+               p.remove(i)
+    print(*p,sep='')
+
