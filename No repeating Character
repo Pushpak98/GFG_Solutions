@@ -1,0 +1,19 @@
+for _ in range(int(input())):
+    input()
+    s=input()
+    d={}
+    l=[]
+    for i in s:
+        if i in d:
+            d[i]+=1
+        else:
+            d[i]=1
+    for i in d:
+        if d[i]==1:
+            l.append(i)
+    for i in s:
+        if i in l:
+            print(i)
+            break
+    else:
+        print(-1)
