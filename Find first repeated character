@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jun 27 00:21:29 2020
+
+@author: pussy
+"""
+
+t=int(input())
+for i in range(t):
+    s=input()
+    d={}
+    c=0
+    for each in s:
+        if each in d.keys():
+            print(each)
+            c=1
+            break
+        else:
+            d[each]=1
+    if c==0:
+        print(-1)
