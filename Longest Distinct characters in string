@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+    m=-1
+    s=input()
+    for i in range(len(s)-1):
+        for j in range(i,len(s)):
+            x=s[i:j+1]
+            if(len(x)==len(set(x))):
+                m=max(m,len(x))
+    print(m)
