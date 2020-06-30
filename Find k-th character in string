@@ -1,0 +1,16 @@
+t = int(input().strip())
+for i in range(t):
+    m,k,n = list(input().strip().split(' '))
+    m,k,n = [int(m),int(k),int(n)]
+    val = "{0:b}".format(m)
+    val1 = val
+    temp = list(val)
+    for j in range(n):
+        temp = list(val1)
+        for p in range(len(temp)):
+            if temp[p] == '0':
+                temp[p] = '01'
+            elif temp[p] == '1':
+                temp[p] = '10'
+        val1 = ''.join(temp)
+    print(val1[k])
