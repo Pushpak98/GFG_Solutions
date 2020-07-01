@@ -1,0 +1,6 @@
+for i in str1:
+if i in str2:
+str1 = str1.replace(i,"",1)
+str2 = str2.replace(i,"",1)
+
+return len(str1)+len(str2)
