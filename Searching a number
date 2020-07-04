@@ -1,0 +1,20 @@
+for _ in range(int(input())):
+    n=input().split()
+    m=input().split()
+    n=list(n)
+    m=list(m)
+    i=0
+    j=0
+    flag=0
+    a=[]
+    for i in n:
+        for j in range(len(m)):
+            if i==m[j]:
+               a.append(j+1)
+               flag=1
+               
+    if flag==1:
+        print(min(a))
+    else:    
+        print('-1')
+    
