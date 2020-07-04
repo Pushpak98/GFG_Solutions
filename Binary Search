@@ -1,0 +1,13 @@
+# Left=0 and High=0
+def bin_search(arr, left, right, k):
+#Code here
+    if right>=left:
+        mid = (right + left) // 2
+        if x == arr[mid]:
+            return mid
+        elif arr[mid] > x:
+            return bin_search(arr, left, mid-1, x)
+        else:
+            return bin_search(arr, mid+1, right, x)
+    else:
+        return -1
