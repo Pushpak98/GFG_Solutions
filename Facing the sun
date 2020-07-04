@@ -1,0 +1,16 @@
+for _ in range(int(input())):
+    n = int(input())
+    arr = list(map(int,input().split()))
+    Max = arr[0]
+    count = 1
+    for i in range(1,n):
+        if arr[i] > Max:
+            count += 1
+            Max = arr[i]
+
+    print(count)
+        
+        
+        
+        
+        
