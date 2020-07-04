@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul  5 00:07:52 2020
+
+@author: pu
+"""
+
+for _ in range(int(input())):
+    m,n=input().split()
+    a=list(map(int,input().split()))
+    flag=0
+    conf=0
+    for i in range(len(a)):
+        if a[i]<=int(n):
+            conf=i
+            flag=1
+            
+    if flag==1:
+        print(conf)
+    else:
+        print('-1')
+        
+        
