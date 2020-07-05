@@ -1,0 +1,8 @@
+def transitionPoint(arr, n):
+    try:
+        a=(arr.index(1))
+    except:
+        a=('-1')
+    return a
+    
+    
