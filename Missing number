@@ -1,0 +1,10 @@
+#code
+for _ in range(int(input())):
+    a=int(input())
+    b=list(map(int,input().split()))
+    b=set(b)
+    for i in range(1,a+1):
+        if i not in b:
+            print(i)
+            
+            
