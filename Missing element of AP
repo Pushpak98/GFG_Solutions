@@ -1,0 +1,16 @@
+for _ in range(int(input())):
+    b=list(map(int,input().split()))
+    if len(b)==1:
+        break
+    else:
+        d=int((b[-1]-b[0])/(len(b)))
+        
+    e=b[0]
+    for i in range((len(b))-1):
+        e+=d
+        if e not in b:
+            print(e)
+        else:
+            break
+        
+ 
