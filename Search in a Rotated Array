@@ -1,0 +1,7 @@
+for _ in range(int(input())):
+    n,arr = input(),input().split()
+    i = input()
+    try:
+        print(arr.index(i))
+    except:
+        print('-1') 
