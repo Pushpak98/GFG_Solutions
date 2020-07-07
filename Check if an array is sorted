@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+    m=int(input())
+    n=list(map(int,input().split()))
+    o=sorted(n)
+    
+    if n==o:
+        print('1')
+    else:
+        print('0')
