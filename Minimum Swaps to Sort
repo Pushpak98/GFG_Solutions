@@ -1,0 +1,12 @@
+
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+def minSwaps(arr, n):
+    Arr = sorted(arr)
+    count = 0
+    for k in range(n):
+        if arr[k] != Arr[k]:
+            count+=1
+            i = arr.index(Arr[k])
+            swap(arr, i, k)
+    return count
