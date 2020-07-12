@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    m=input()
+    c='!#$%&*@^~'
+    a=input().split()
+    b=input().split()
+    d=[]
+    for i in c:
+        if i in a:
+            d.append(i)
+    
+    print(*d)
+    print(*d)
