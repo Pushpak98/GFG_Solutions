@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jul 13 00:11:49 2020
+
+@author: 
+"""
+
+for i in range(int(input())):
+    m,n=(input().split())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    
+    count=0
+    for i in b:
+        if i in a:
+            count+=1
+            
+            
+    if count==int(n):
+        print('Yes')
+    else:
+        print('No')
+        
+          
