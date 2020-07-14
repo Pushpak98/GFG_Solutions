@@ -1,0 +1,19 @@
+
+from collections import Counter
+
+for _ in range(int(input())):
+    b=input()
+    c=input().split()
+    d=Counter(c)
+    e={}
+    
+    flag=-0
+    for i in c:
+        if d[i]==1:
+            flag= 1
+            print(i)
+            break
+    
+    if flag==0:
+        print('-1')
+        
