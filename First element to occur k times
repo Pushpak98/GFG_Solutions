@@ -1,0 +1,13 @@
+from collections import Counter
+for _ in range(int(input())):
+    lst=list(map(int,input().split()))
+    lst1=list(map(int,input().split()))
+    flag=1
+    a=Counter(lst1)
+    for i in lst1:
+        if a[i]==lst[1]:
+            flag=0
+            print(i)
+            break
+    if flag==1:
+        print("-1")
