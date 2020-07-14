@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul 15 01:27:12 2020
+
+@author: pus
+"""
+
+for _ in range(int(input())):
+    a,b=input().split()
+    c=list(map(str,input().split()))
+    d=list(map(str,input().split()))
+    e={}
+    for i in d:
+        if i not in e:
+            e[i]=i
+    for i in c:
+        if i not in e:
+            print(i,end=' ')
+    print("")
+        
