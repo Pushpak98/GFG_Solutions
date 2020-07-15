@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    s=int(input().split()[1])
+    l=list(map(int,input().split()))
+    d=[]
+    for i in l:
+        if s-i in d:
+            print('Yes')
+            break
+        else:
+            d.append(i)
+    else:
+        print('No')
