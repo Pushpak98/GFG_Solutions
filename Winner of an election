@@ -1,0 +1,10 @@
+#code
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l1=list(map(str,input().split()))
+    l1.sort()
+    l2=sorted(l1,key=l1.count,reverse=True)
+    kk=l2[0]
+    print(kk,end=" ")
+    print(l2.count(l2[0]))  
