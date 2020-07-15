@@ -1,0 +1,17 @@
+
+
+for _ in range(int(input())):
+    a,b=(input().split())
+    c=list(map(int,input().split()))
+    count=0
+    for i in range(int(a)):
+        for j in range(i+1,int(a)):
+            if c[i]+c[j] == int(b):
+                count+=1
+    print(count)
+    
+    
+    
+    
+    
+    
