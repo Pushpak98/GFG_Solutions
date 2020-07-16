@@ -1,0 +1,12 @@
+import math
+for _ in range(int(input())):
+    n=int(input())
+    a=list(map(int,input().strip().split()))
+    for i in range(len(a)):
+        x1=5*(a[i]*a[i])+4
+        x2=5*(a[i]*a[i])-4
+        x11=int(math.sqrt(x1))
+        x22=int(math.sqrt(x2))
+        if (x11*x11==x1) or (x22*x22==x2):
+            print(a[i],end=" ")
+    print() 
