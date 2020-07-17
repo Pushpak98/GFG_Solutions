@@ -1,0 +1,15 @@
+import numpy as np
+
+for _ in range(int(input())):
+    n=int(input())
+    a=list(map(int,input().split()))
+    a=np.array(a).reshape(n,n)
+    k=[]
+    for i in range(n):
+        if i%2==0:
+            for j in range(n):
+                k.append(a[i][j])
+        else:
+            for j in range(n-1,-1,-1):
+                k.append(a[i][j])
+    print(*k)
