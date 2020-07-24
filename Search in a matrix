@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+    a,b=input().split()
+    c=list(map(int,input().split()))
+    d=int(input())
+    
+    if d in c:
+        print('1')
+    else:
+        print('0')
