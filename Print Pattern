@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul 26 01:48:20 2020
+
+@author: pussy
+"""
+c=[]
+d=[]
+
+def fun(a):
+    if(a>0):
+        c.append(a)
+        fun(a-5)
+    else:
+        d.append((a))
+
+n=int(input())
+for i in range(n):
+    a=int(input())
+    fun(a)
+    
+print(*c,*d,*c[::-1])
