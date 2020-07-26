@@ -1,0 +1,6 @@
+from math import factorial as fac
+
+for i in range(int(input())):
+    m=int(input())
+    n=m//2
+    print(fac(2*n)//fac(n+1)//fac(n))
