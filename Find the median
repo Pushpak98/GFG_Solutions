@@ -1,0 +1,7 @@
+#code
+import statistics 
+for _ in range(int(input())):
+    a=int(input())
+    b=list(map(int,input().split()))
+    c=statistics.median(b)
+    print(int(c))
