@@ -1,0 +1,13 @@
+
+for _ in range(int(input())):
+    a=int(input())
+    c=1
+    f=0
+    for i in range(a):
+        f+=c
+        d=f
+        f=c
+        c=d
+    print(f%10)
+    
+   
