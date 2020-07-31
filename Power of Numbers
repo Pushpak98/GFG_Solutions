@@ -1,0 +1,5 @@
+for t in range(int(input())):
+    N = input()
+    R = int(N[::-1])
+    print(pow(int(N),R,1000000007))
+    
