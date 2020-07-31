@@ -1,0 +1,9 @@
+import numpy as np
+for _ in range(int(input())):
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    c=list(map(int,input().split()))
+    d=sorted(np.concatenate((b,c)))
+    
+    print(d[a[2]-1])
+    
