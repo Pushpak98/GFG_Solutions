@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+
+    a=input().split()
+
+    c=int(int(a[0],2))*int(int(a[1],2))
+
+    print(c)
+
+   
+
+
+0.02 Python03
