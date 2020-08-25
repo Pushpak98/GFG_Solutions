@@ -1,0 +1,16 @@
+for _ in range(int(input())):
+    a=int(input())
+    b=list(map(int,input().split()))
+    c=[0]*(a+1)
+    for i in range(len(b)):
+        if i==0:
+            c[i]=b[i]
+        elif i==1:
+            c[i]=b[i]
+        elif i==2:
+            c[i]=b[i]+c[i-2]
+        else:
+            c[i]=max(c[i-2]+b[i],c[i-3]+b[i])
+    print(max(c))
+
+    
